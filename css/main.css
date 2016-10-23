@@ -893,36 +893,16 @@ select.valid {
 }
 
 @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
-    
-    .splash {
-        max-height: 60.0rem;
-    }
-    .splash-inner {
-        padding: 2.0rem !important;
+    section {
+        padding: 6.0rem;
     }
 
-    .splash .logo-group {
-        padding: 0 0 2.0rem !important;
+    #header {
+        padding: 10.0rem 0 6.0rem;
     }
 
-    .splash .logo-group .logo {
-        font-size: 8.0rem !important;
-    }
-
-    .splash .logo-group h1 {
-        font-size: 1.4rem !important;
-    }
-
-    .splash .content {
-        padding: 0 0 2.0rem !important;
-    }
-
-    .splash .content h1 {
-        font-size: 3.2rem !important;
-    }
-
-    .footer-inner {
-        padding: 4.0rem;
+    .nav-group {
+        display: none;
     }
 
 }

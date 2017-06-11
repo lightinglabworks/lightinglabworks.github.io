@@ -1,0 +1,34 @@
+$doc_width: 800px;
+
+#topbar {
+    display: block;
+    top: 0px;
+    left: 0px;
+    background-color: #0EC1FF;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 4rem;
+}
+
+#topbar_container {
+    width: $doc_width;
+    margin: 0 auto;
+}
+
+#social_media_icons {
+	float: left;
+}
+
+#social_media_icons img {
+	margin-right: 5px;
+}
+
+
+#call_for_quote {
+	float: right;
+	color: #FFF;
+    font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+}

@@ -1,0 +1,54 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+
+.btn {
+    color: #FFFFFF;
+    border: 0;
+    border-color: transparent;
+    background-color: transparent;
+    padding: 2.0rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
+
+.btn:hover {
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+    text-decoration: none;
+}
+
+.btn:hover, 
+.btn:active, 
+.btn.active, 
+.btn.disabled, 
+.btn[disabled] {
+    /*
+    background-color: #000000;
+    *background-color: #000000;
+    */
+}
+
+.btn.btn-primary {
+    background-color: #899e88;
+    color: #FFFFFF;
+}
+
+.btn.btn-primary:hover {
+    background-color: #859285;
+}

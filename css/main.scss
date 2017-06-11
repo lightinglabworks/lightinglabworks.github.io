@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'lightinglabworks';
+    src:url('fonts/lightinglabworks.eot?-f3jzyj');
+    src:url('fonts/lightinglabworks.eot?#iefix-f3jzyj') format('embedded-opentype'),
+        url('fonts/lightinglabworks.ttf?-f3jzyj') format('truetype'),
+        url('fonts/lightinglabworks.woff?-f3jzyj') format('woff'),
+        url('fonts/lightinglabworks.svg?-f3jzyj#posterus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'lightinglabworks';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-posterus:before {
+    content: "\e600";
+}
+.icon-mail:before {
+    content: "\e002";
+}
+.icon-arrow-right:before {
+    content: "\e095";
+}
+.icon-check:before {
+    content: "\e116";
+}
+.icon-close:before {
+    content: "\e117";
+}
+
+
+
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+section {
+    width: 100%;
+    padding: 10.0rem 0;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: block;
+    width: 80%;
+    max-width: 94.0rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+    font-size: 4.0rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+h2 {
+    font-family: "Open Sans", Arial, serif;
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: "Open Sans", "Helvetica", Arial, sans serif;
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h4 {
+    font-family: "Open Sans", "Helvetica", Arial, sans serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0;
+    padding-bottom: 1.4rem;
+}
+
+span.bold {
+    font-weight: 400;
+}
+
+a {
+    
+    font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
+    text-decoration: none;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+img {
+    border: 0;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    /* Disable dragging images */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ==========================================================================
+   Import external files using Sass
+   ========================================================================== */
+
+@import 'topbar';
+@import 'nav';
+@import 'sections';
+@import 'buttons';
+@import 'forms';
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    section {
+        padding: 6.0rem;
+    }
+
+    #header {
+        padding: 10.0rem 0 6.0rem;
+    }
+
+    .nav-group {
+        display: none;
+    }
+
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

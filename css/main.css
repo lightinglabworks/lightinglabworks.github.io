@@ -187,10 +187,6 @@ img {
   height: 4rem;
   padding: 1rem 4rem; }
 
-#topbar_container {
-  width: 800px;
-  margin: 0 auto; }
-
 #social_media_icons {
   float: left; }
 
@@ -198,13 +194,22 @@ img {
   margin-right: 5px; }
 
 #call_for_quote {
-  float: right;
-  color: #FFF;
-  font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.4; }
+  display: none; }
 
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #topbar_container {
+    width: 768px;
+    margin: 0 auto; }
+
+  #call_for_quote {
+    display: inline-block;
+    float: right;
+    color: #FFF;
+    font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4; } }
 /* ==========================================================================
    NAVBAR
    ========================================================================== */
@@ -214,12 +219,9 @@ img {
   height: 40px;
   padding: 1rem 4rem; }
 
-#navbar_container {
-  width: 800px;
-  margin: 0 auto; }
-
 #nav-logo a {
   /* styling for text logo placeholder */
+  float: left;
   color: #000;
   font-size: 1.6rem;
   font-weight: 400;
@@ -237,28 +239,54 @@ img {
   padding-right: 1.0rem; }
 
 .nav-group {
-  float: right; }
+  display: none; }
 
-.nav-link {
-  position: relative;
-  float: right;
-  padding: 0 0 0 4.0rem; }
+@media only screen and (min-width: 768px) {
+  #navbar_container {
+    width: 768px;
+    margin: 0 auto; }
 
-.nav-link a {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #000000;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear; }
+  #nav-logo a {
+    /* styling for text logo placeholder */
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; }
 
+  #nav-logo img {
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    padding-right: 1.0rem; }
+
+  .nav-group {
+    display: inline-block;
+    float: right; }
+
+  .nav-link {
+    position: relative;
+    float: right;
+    padding: 0 0 0 4.0rem; }
+
+  .nav-link a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000000;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear; } }
 .nav-link a:hover,
 .nav-link a.active {
   color: #000000;
@@ -295,7 +323,11 @@ img {
 section h2 {
   text-align: center;
   font-weight: 400;
-  padding: 0 0 2.0rem 0; }
+  padding: 0 0 2.0rem 0;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.1rem; }
 
 section p {
   text-align: left;
@@ -311,20 +343,22 @@ section p.bold {
   padding: 4rem; }
 
 #carousel div {
-  width: 800px;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0; }
 
 #carousel .carousel_heading {
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 3rem; }
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1rem; }
 
 #carousel .carousel_subheading {
-  font-size: 4rem;
-  font-weight: 300; }
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1rem; }
 
 #carousel img {
-  float: right; }
+  float: left;
+  margin: 20px; }
 
 #about {
   background-color: #F6F9FC; }
@@ -346,6 +380,36 @@ section p.bold {
   font-size: 1.6rem;
   color: #000000; }
 
+@media only screen and (min-width: 768px) {
+  #carousel div {
+    width: 768px;
+    margin: 0 auto; }
+
+  #carousel .carousel_heading {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 4rem; }
+
+  #carousel .carousel_subheading {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 4rem; }
+
+  #carousel img {
+    float: right;
+    margin: 0px; }
+
+  section h2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 2.0rem 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem; }
+
+  .container {
+    width: 768px; } }
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
@@ -791,14 +855,8 @@ select.valid {
    Media Queries
    ========================================================================== */
 @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
-  section {
-    padding: 6.0rem; }
-
   #header {
-    padding: 10.0rem 0 6.0rem; }
-
-  .nav-group {
-    display: none; } }
+    padding: 10.0rem 0 6.0rem; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

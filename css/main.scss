@@ -333,16 +333,8 @@ img {
 }
 
 @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
-    section {
-        padding: 6.0rem;
-    }
-
     #header {
         padding: 10.0rem 0 6.0rem;
-    }
-
-    .nav-group {
-        display: none;
     }
 
 }

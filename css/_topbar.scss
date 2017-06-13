@@ -1,18 +1,13 @@
-$doc_width: 800px;
+$doc_width: 768px;
 
 #topbar {
-    display: block;
-    top: 0px;
-    left: 0px;
-    background-color: #0EC1FF;
-    width: 100%;
-    height: 4rem;
-    padding: 1rem 4rem;
-}
-
-#topbar_container {
-    width: $doc_width;
-    margin: 0 auto;
+	display: block;
+	top: 0px;
+	left: 0px;
+	background-color: #0EC1FF;
+	width: 100%;
+	height: 4rem;
+	padding: 1rem 4rem;
 }
 
 #social_media_icons {
@@ -23,12 +18,25 @@ $doc_width: 800px;
 	margin-right: 5px;
 }
 
-
 #call_for_quote {
-	float: right;
-	color: #FFF;
-    font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.4;
+	display: none;
+}
+
+@media only screen and (min-width: $doc_width) {
+	/* For desktop: */
+	#topbar_container {
+		width: $doc_width;
+		margin: 0 auto;
+	}
+
+	#call_for_quote {
+		display: inline-block;
+		float: right;
+		color: #FFF;
+		font-family: 'Open Sans', 'Helvetica', Arial, Sans Serif;
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 1.4;
+	}
+
 }

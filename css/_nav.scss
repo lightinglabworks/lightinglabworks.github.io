@@ -2,82 +2,111 @@
    NAVBAR
    ========================================================================== */
 $nav_link_color: #000000;
+$doc_width: 768px;
 
 @mixin transitions() {
-    -webkit-transition: all 0.1s linear;
-    -moz-transition:    all 0.1s linear;
-    -ms-transition:     all 0.1s linear;
-    -o-transition:      all 0.1s linear;
-    transition:         all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition:    all 0.1s linear;
+	-ms-transition:     all 0.1s linear;
+	-o-transition:      all 0.1s linear;
+	transition:         all 0.1s linear;
 }
 
 @mixin transforms() {
-    -webkit-transform:  translateY(-50%);
-    -ms-transform:      translateY(-50%);
-    transform:          translateY(-50%);
+	-webkit-transform:  translateY(-50%);
+	-ms-transform:      translateY(-50%);
+	transform:          translateY(-50%);
 }
 
 #navbar {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    padding: 1rem 4rem;
-}
-
-#navbar_container {
-    width: 800px;
-    margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	padding: 1rem 4rem;
 }
 
 #nav-logo a {
-    /* styling for text logo placeholder */
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+	/* styling for text logo placeholder */
+	float: left;
+	color: #000;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
 }
 
 #nav-logo img {
-    display: inline-block;
-    float: left;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto !important;
-    padding-right: 1.0rem;
+	display: inline-block;
+	float: left;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto !important;
+	padding-right: 1.0rem;
 }
 
 .nav-group {
-    float: right;
+	display: none;
 }
 
-.nav-link {
-    position: relative;
-    float: right;
-    padding: 0 0 0 4.0rem;
-}
+@media only screen and (min-width: $doc_width) {
+	#navbar_container {
+		width: $doc_width;
+		margin: 0 auto;
+	}
 
-.nav-link a {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: $nav_link_color;
-    @include transitions();
+	#nav-logo a {
+		/* styling for text logo placeholder */
+		color: #000;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 1.6;
+		text-align: center;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+
+	#nav-logo img {
+		display: inline-block;
+		float: left;
+		max-width: 100%;
+		max-height: 100%;
+		width: auto !important;
+		padding-right: 1.0rem;
+	}
+
+	.nav-group {
+		display: inline-block;
+		float: right;
+	}
+
+	.nav-link {
+		position: relative;
+		float: right;
+		padding: 0 0 0 4.0rem;
+	}
+
+	.nav-link a {
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 2;
+		text-align: center;
+		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+		cursor: pointer;
+		color: $nav_link_color;
+		@include transitions();
+	}
 }
 
 .nav-link a:hover,
 .nav-link a.active {
-    color: $nav_link_color;
-    opacity: 0.6;
-    @include transitions();
+	color: $nav_link_color;
+	opacity: 0.6;
+	@include transitions();
 }
 
 .nav-link .btn-get-started.active {
-    color: $nav_link_color;
+	color: $nav_link_color;
 }

@@ -1,93 +1,140 @@
 /* ==========================================================================
    SECTION STYLES
    ========================================================================== */
-$doc_width: 800px;
+$doc_width: 768px;
 
 #header {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    padding: 22.0rem 0 22.0rem;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    text-align: center;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	padding: 22.0rem 0 22.0rem;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	text-align: center;
 }
 
 #header h1 {
-    padding: 0 0 1.0rem 0;
-    color: #000;
+	padding: 0 0 1.0rem 0;
+	color: #000;
 }
 
 #header p {
-    color: #000;
+	color: #000;
 }
 
 section h2 {
-    text-align: center;
-    font-weight: 400;
-    padding: 0 0 2.0rem 0;
+	text-align: center;
+	font-weight: 400;
+	padding: 0 0 2.0rem 0;
+
+	font-size: 1.8rem;
+	line-height: 1.8;
+	text-align: center;
+	letter-spacing: 0.1rem;
 }
 
 section p {
-    text-align: left;
-    color: #505050;
+	text-align: left;
+	color: #505050;
 }
 
 section p.center {
-    text-align: center;
+	text-align: center;
 }
 
 section p.bold {
-    font-weight: 400;
+	font-weight: 400;
 }
 
 #carousel {
-    padding: 4rem;
+	padding: 4rem;
 }
 
 #carousel div {
-    width: $doc_width;
-    margin: 0 auto;
+	width: 100%;
+	margin: 0;
 }
 
 #carousel .carousel_heading {
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 3rem;
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 1rem;
 }
 
 #carousel .carousel_subheading {
-    font-size: 4rem;
-    font-weight: 300;
+	font-size: 2rem;
+	font-weight: 100;
+	line-height: 1rem;
 }
 
 #carousel img {
-    float: right;
+	float: left;
+	margin: 20px;
 }
 
 #about {
-    background-color: #F6F9FC;
+	background-color: #F6F9FC;
 }
 
 #products {
-    background-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 
 #contact {
-    background-color: #F6F9FC;
+	background-color: #F6F9FC;
 }
 
 
 #footer {
-    background-color: #FFFFFF;
-    border-top: 1px solid #E0E3E6;
-    padding: 4.0rem 0 !important;
+	background-color: #FFFFFF;
+	border-top: 1px solid #E0E3E6;
+	padding: 4.0rem 0 !important;
 }
 
 #footer p {
-    text-align: center;
-    padding: 0;
-    font-size: 1.6rem;
-    color: #000000;
+	text-align: center;
+	padding: 0;
+	font-size: 1.6rem;
+	color: #000000;
+}
+
+
+@media only screen and (min-width: $doc_width) {
+	#carousel div {
+		width: $doc_width;
+		margin: 0 auto;
+	}
+
+	#carousel .carousel_heading {
+		font-size: 4rem;
+		font-weight: 400;
+		line-height: 4rem;
+	}
+
+	#carousel .carousel_subheading {
+		font-size: 4rem;
+		font-weight: 300;
+		line-height: 4rem;
+	}
+
+	#carousel img {
+		float: right;
+		margin: 0px;
+	}
+
+	section h2 {
+		text-align: center;
+		font-weight: 400;
+		padding: 0 0 2.0rem 0;
+
+		font-size: 2rem;
+		line-height: 2rem;
+		text-align: center;
+		letter-spacing: 0.1rem;
+	}
+
+	.container {
+		width: $doc_width;
+	}
 }

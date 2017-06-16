@@ -69,8 +69,9 @@ section p.bold {
 }
 
 #carousel img {
-	float: left;
-	margin: 20px;
+	display: block;
+	margin: auto;
+	max-width: 80%;
 }
 
 #about {
